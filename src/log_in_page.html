@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log in</title>
+  <link rel="stylesheet" href="log_in_page.css">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"/>
+</head>
+<body>
+  <form action="handler.php" method="post">
+    <div class="container">
+      <h1>Welcome to online game!</h1>
+      <p class="under-header">Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="nickname"><b>Nickname</b></label>
+      <input type="text" placeholder="Enter nickname" name="nickname" value="vovBorya" required>
+
+      <br>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter email" name="email" value="vovbor02@gmail.com" required>
+
+      <div class="col-md-12">
+        <div class="country">
+          <label for="country"><b>Country</b></label><br>
+          <select class="custom-select" name="country">
+            <option value="england">England
+            <option value="russia">Russia
+            <option value="ukraine" selected>Ukraine
+            <option value="france">France
+            <option value="spain">Spain
+            <option value="brazil">Brazil
+            <option value="usa">USA
+            <option value="germany">Germany
+            <option value="poland">Poland
+            <option value="italy">Italy
+            <option value="belarus">Belarus
+            <option value="argentina">Argentina
+            <option value="belgium">Belgium
+          </select>
+      </div>
+      <div class="row">
+        <div class="md-4 m-3" class="city">
+        <label for="city"><b>City</b></label><br>
+        <div class="input-group-text">
+          <p><input class="mx-2" type="radio" name="city" value="odessa" checked>Odessa</p>
+          <p><input class="mx-2" type="radio" name="city" value="kyiv">Kyiv</p>
+          <p><input class="mx-2" type="radio" name="city" value="london">London</p>
+          <p><input class="mx-2" type="radio" name="city" value="minsk">Minsk</p>
+          <p><input class="mx-2" type="radio" name="city" value="madrid">Madrid</p>
+          <p><input class="mx-2" type="radio" name="city" value="moscow">Moscow</p>
+          <p><input class="mx-2" type="radio" name="city" value="roma">Roma</p>
+          <p><input class="mx-2" type="radio" name="city" value="brussels">Brussels</p>
+          <p><input class="mx-2" type="radio" name="city" value="brasilia">Brasilia</p>
+        </div>
+        </div>
+        <div class="md-4 m-3" class="language">
+          <label for="language"><b>Language</b></label><br>
+          <div class="input-group-text">
+            <input class="mx-2" type="checkbox" name="language" value="english" checked>English<br>
+            <input class="mx-2" type="checkbox" name="language" value="russian" checked>Russian<br>
+            <input class="mx-2" type="checkbox" name="language" value="ukrainian" checked>Ukrainian<br>
+            <input class="mx-2" type="checkbox" name="language" value="french">French<br>
+            <input class="mx-2" type="checkbox" name="language" value="spanish">Spanish<br>
+            <input class="mx-2" type="checkbox" name="language" value="italian">Italian<br>
+            <input class="mx-2" type="checkbox" name="language" value="belarusian">Belarusian<br>
+            <input class="mx-2" type="checkbox" name="language" value="polish">Polish<br>
+            <input class="mx-2" type="checkbox" name="language" value=japanese">Japanese<br>
+          </div>
+        </div>
+      </div>
+      <div class="server">
+        <label for="server"><b>Server</b></label><br>
+        <select class="custom-select" name="server">
+          <option value="play.AspiriaMc.com:25565">AspiriaMc.com
+          <option value="play.auscraft.net:25565">AusCraft Network
+          <option value="micelium-project.ru:25565">PandaCraft Network
+          <option value="mc.queercraft.net:25565">Queercraft
+          <option value="play.runic-paradise.com:25565">Runic Paradise
+          <option value="mine.edge-gamers.com:25565">EGO Survival
+          <option value="play.crazypig.net:25565" selected>CrazyPig
+          <option value="play.unionmc.net:25565">UNION MC OP
+          <option value="play.luckysb.org:25565">Lucky Skyblock
+          <option value="pvpwars.net:25565">PVP WARS
+          <option value="212.22.93.72:25645">ExplayCraft
+          <option value="mc.erisium.com:25565">Erisium Network
+          <option value="195.211.111.101:25565">SuperWorld
+        </select>
+      </div>
+      <div class="character-class">
+        <label for="character-class"><b>Character class</b></label><br>
+        <select class="custom-select" name="character-class">
+          <option value="the-magician">The magician
+          <option value="warrior-mage">Warrior mage
+          <option value="inquisitor">Inquisitor
+          <option value="healer">Healer
+          <option value="archer">Archer
+          <option value="warrior" selected>Warrior
+          <option value="assassin">Assassin
+          <option value="acrobat">Acrobat
+          <option value="monk">Monk
+          <option value="bard">Bard
+          <option value="pilgrim">Pilgrim
+          <option value="agent">Agent
+          <option value="night-blade">Night blade
+        </select>
+      </div>
+      <div class="character-race">
+        <label for="character-race"><b>Character race</b></label><br>
+        <select class="custom-select" name="character-race">
+          <option value="nords">Nords
+          <option value="imperians">Imperians
+          <option value="argoniane">Argoniane
+          <option value="dark-elfs">Dark elfs
+          <option value="light-elfs">Light elfs
+          <option value="forest-elfs">Forest elfs
+          <option value="high-elfs">High elfs
+          <option value="seaman" selected>Seaman
+          <option value="hungarians">Hungarians
+          <option value="orgs">Orgs
+          <option value="bretons">Bretons
+          <option value="redgards">Redgards
+          <option value="kajiti">Kajiti
+        </select>
+      </div>
+      <div class="skills">
+        <label for="skills"><b>Skills</b></label><br>
+        <select class="custom-select" multiple size="3" name="skills">
+          <option value="flyer">Flyer
+          <option value="setting-traps" selected>Setting traps
+          <option value="noiselessness">Noiselessness
+          <option value="charm">Charm
+          <option value="secret-signs" selected>Secret signs
+          <option value="disguise">Disguise
+          <option value="animal-training">Animal training
+          <option value="first-aid">First aid
+          <option value="poison-making">Poison making
+          <option value="endurance" selected>Endurance
+          <option value="hacking-locks">Hacking locks
+          <option value="setting-traps">Setting traps
+          <option value="horseback-riding">Horseback riding
+        </select>
+        </div>
+      </div>
+      <br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" value="123456" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" value="123456" required>
+
+      <p class="p-info">Here you can write additional information about you:</p>
+      <textarea name="info" class="info" rows=5 cols=50>
+      </textarea>
+
+      <hr>
+
+      <input type="hidden" name="student" value="Borisov_Vladimir">
+
+      <button type="submit" class="register-btn">Register</button>
+      <input type=reset class="reset-input" value="Clear fields">
+    </div>
+  </form>
+</body>
+</html>

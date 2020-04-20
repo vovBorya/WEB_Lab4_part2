@@ -1,0 +1,105 @@
+* {box-sizing: border-box}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 10px solid #a1a1a1;
+    margin-bottom: 25px;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.register-btn:hover {
+    background-color: #3CAF30;
+    opacity:5;
+}
+
+.reset-input {
+    background-color: #E53935;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    float: right;
+    opacity: 0.9;
+    padding: 15px;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.reset-input:hover {
+    background-color: #C62828;
+    opacity:5;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(0,0,0,0.9);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+    0px -5px 35px rgba(255,255,255,0.3);
+    background: #000080; /* Цвет фона блока */
+    color: #ffe; /* Цвет текста */
+    margin: 0; /* Нулевые отступы вокруг текста */
+    padding: 10px; /* Поля вокруг текста */
+}
+
+.under-header {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.city,
+.server,
+.character-class,
+.character-race,
+.skills {
+    padding: 10px;
+    display: inline-block;
+}
+
+.info {
+    width: 100%;
+    resize: none;
+}
+
+.p-info {
+    padding-left: 15px;
+}
